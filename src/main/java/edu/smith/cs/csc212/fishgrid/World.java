@@ -158,6 +158,16 @@ public class World {
 	}
 	
 	/**
+	 * Insert a new FallingRock into the world at random.
+	 * @return the FallingRock.
+	 */
+	public FallingRock insertFallingRockRandomly() {
+		FallingRock fr = new FallingRock(this);
+		insertRandomly(fr);
+		return fr;
+	}
+	
+	/**
 	 * Insert a new Fish into the world at random of a specific color.
 	 * @param color - the color of the fish.
 	 * @return the new fish itself.
